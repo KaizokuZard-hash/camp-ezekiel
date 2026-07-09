@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Camp Ezekiel 2026 — South Region Youth &amp; Young Adults</title>
 <meta name="description" content="Camp Ezekiel 2026 — a three-day camp for Youth and Young Adults hosted by Rooted In Faith Ministries Int'l, South Region. July 31 – August 2, 2026 in Cartwright, OK." />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝️</text></svg>" />
+<link rel="icon" type="image/png" href="logo.png" />
 <style>
   :root{
     --navy:#1e2a78;
@@ -37,7 +37,8 @@
   header{position:sticky;top:0;z-index:50;background:rgba(19,26,74,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
   nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;color:#fff}
   .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.01em}
-  .brand .mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#1a1c3a;font-size:1.15rem;box-shadow:0 6px 18px -6px var(--gold)}
+  .brand .mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#fff;box-shadow:0 6px 18px -6px rgba(0,0,0,.5);overflow:hidden;flex:none}
+  .brand .mark img{width:86%;height:86%;object-fit:contain}
   .brand small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
   .navlinks{display:flex;gap:26px;align-items:center;font-size:.92rem;font-weight:600}
   .navlinks a{opacity:.85;transition:opacity .2s}
@@ -68,7 +69,9 @@
   .hero::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.5;
     background-image:radial-gradient(rgba(255,255,255,.28) 1px,transparent 1.4px);
     background-size:26px 26px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
-  .hero .wrap{position:relative;z-index:3;padding:96px 0 110px;text-align:center}
+  .hero .wrap{position:relative;z-index:3;padding:72px 0 110px;text-align:center}
+  .hero-logo{width:158px;height:158px;border-radius:50%;background:#fff;display:grid;place-items:center;margin:0 auto 26px;box-shadow:0 18px 44px -14px rgba(0,0,0,.55),0 0 0 6px rgba(255,255,255,.12);overflow:hidden}
+  .hero-logo img{width:84%;height:84%;object-fit:contain}
   /* floating shapes */
   .shape{position:absolute;z-index:2;opacity:.5;animation:bob 7s ease-in-out infinite;pointer-events:none}
   .shape.s1{top:16%;left:8%;font-size:2rem;animation-delay:0s}
@@ -220,7 +223,7 @@
   <div class="wrap">
     <nav>
       <a class="brand" href="#top">
-        <span class="mark">✝</span>
+        <span class="mark"><img src="logo.png" alt="Camp Ezekiel logo"></span>
         <span>Camp Ezekiel<small>South Region Youth</small></span>
       </a>
       <div class="navlinks" id="navlinks">
@@ -246,6 +249,7 @@
   <span class="shape s3">🔥</span>
   <span class="shape s4">✦</span>
   <div class="wrap">
+    <div class="hero-logo"><img src="logo.png" alt="Camp Ezekiel — USA Youth & Young Adults"></div>
     <span class="tag">Forward In Faith Ministries International &nbsp;•&nbsp; <b>South Region</b></span>
     <h1><span class="out">CAMP</span> <span class="in">EZEKIEL</span></h1>
     <p class="lead">One camp. Two journeys. A weekend for our <strong>Youth</strong> and <strong>Young Adults</strong> to grow in faith, worship, and community.</p>
@@ -442,7 +446,7 @@
     <div class="foot-grid">
       <div>
         <div class="brand" style="margin-bottom:14px">
-          <span class="mark">✝</span>
+          <span class="mark"><img src="logo.png" alt="Camp Ezekiel logo"></span>
           <span>Camp Ezekiel<small>Forward In Faith Ministries Int'l</small></span>
         </div>
         <p style="max-width:320px">USA Youth &amp; Young Adults — South Region. Rooted by the Spirit of God.</p>

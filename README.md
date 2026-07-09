@@ -11,7 +11,7 @@ One camp, two tracks: **Youth** and **Young Adults**.
 
 ## Viewing the site
 
-The site is a single self-contained file — just open `index.html` in any browser.
+The site is a static page (`index.html` + `logo.png`) — just open `index.html` in any browser.
 
 ## Hosting
 
