@@ -15,6 +15,6 @@ The site is a static page (`index.html` + `logo.png`) — just open `index.html`
 
 ## Hosting
 
-This repo is published with **GitHub Pages** from the `main` branch. The live site is available at:
+The site is served at **https://southregionyouth.org** via Cloudflare Pages (connected to this repo — every push to `main` redeploys automatically).
 
-`https://KaizokuZard-hash.github.io/camp-ezekiel/`
+It is also published with **GitHub Pages** at `https://kaizokuzard-hash.github.io/camp-ezekiel/`.
