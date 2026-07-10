@@ -110,11 +110,11 @@
   .head p{color:var(--muted);margin-top:14px;font-size:1.08rem}
 
   /* ---------- PLAYFUL SECTION BACKDROPS ---------- */
-  #about,#details,#faq{position:relative;overflow:hidden}
-  #about::before,#details::before,#faq::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:
+  #about,#details,#faq,#flyers{position:relative;overflow:hidden}
+  #about::before,#details::before,#faq::before,#flyers::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:
     radial-gradient(closest-side,rgba(47,95,208,.10),transparent) 88% -12%/380px 380px no-repeat,
     radial-gradient(closest-side,rgba(245,166,35,.12),transparent) -8% 116%/420px 420px no-repeat}
-  #about .wrap,#details .wrap,#faq .wrap{position:relative;z-index:1}
+  #about .wrap,#details .wrap,#faq .wrap,#flyers .wrap{position:relative;z-index:1}
 
   /* ---------- TRACKS ---------- */
   .tracks{position:relative;overflow:hidden;
@@ -143,6 +143,25 @@
   .track .price{margin-top:auto;padding-top:24px;display:flex;align-items:baseline;gap:8px}
   .track .price b{font-size:2.1rem;font-weight:900}
   .track .price span{opacity:.8;font-weight:600}
+
+  /* ---------- TRACK FLYER LINKS ---------- */
+  .track-flyer{display:flex;align-items:center;gap:14px;margin-top:20px;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.12);transition:background .2s,transform .2s}
+  .track-flyer:hover{background:rgba(255,255,255,.22);transform:translateY(-2px)}
+  .track.yo .track-flyer{background:rgba(30,42,120,.12)}
+  .track.yo .track-flyer:hover{background:rgba(30,42,120,.2)}
+  .track-flyer img{width:52px;height:72px;object-fit:cover;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+  .track-flyer span{font-weight:700;font-size:.92rem}
+
+  /* ---------- FLYERS SECTION ---------- */
+  .flyer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px;max-width:840px;margin:0 auto}
+  .flyer-card{text-align:center}
+  .flyer-card a.pic{display:block;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease}
+  .flyer-card:first-child a.pic{transform:rotate(-1.6deg)}
+  .flyer-card:last-child a.pic{transform:rotate(1.6deg)}
+  .flyer-card a.pic:hover{transform:rotate(0) scale(1.03);box-shadow:0 26px 60px -18px rgba(19,26,74,.55)}
+  .flyer-card figcaption{margin-top:16px;font-weight:800}
+  .flyer-card .dl{display:inline-block;margin-top:6px;color:var(--blue-bright);font-weight:600;font-size:.92rem}
+  @media(max-width:640px){.flyer-grid{grid-template-columns:1fr;max-width:380px}}
 
   /* ---------- INFO GRID ---------- */
   .info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
@@ -232,6 +251,7 @@
       <div class="navlinks" id="navlinks">
         <a href="#about">About</a>
         <a href="#tracks">Tracks</a>
+        <a href="#flyers">Flyers</a>
         <a href="#details">Details</a>
         <a href="#register">Register</a>
         <a href="#faq">FAQ</a>
@@ -310,6 +330,10 @@
           <li>Fellowship, testimonies &amp; connection</li>
           <li>Real conversations about faith &amp; life</li>
         </ul>
+        <a class="track-flyer" href="flyers/young-adults.jpg" target="_blank" rel="noopener">
+          <img src="flyers/young-adults.jpg" alt="Young Adults Camp flyer thumbnail">
+          <span>View the Young Adults flyer →</span>
+        </a>
         <div class="price"><b>$150</b><span>per person</span></div>
       </div>
       <div class="track yo">
@@ -322,8 +346,39 @@
           <li>Age-appropriate teaching</li>
           <li>New friendships &amp; unforgettable memories</li>
         </ul>
+        <a class="track-flyer" href="flyers/youth.jpg" target="_blank" rel="noopener">
+          <img src="flyers/youth.jpg" alt="Youth Camp flyer thumbnail">
+          <span>View the Youth flyer →</span>
+        </a>
         <div class="price"><b>$150</b><span>per person</span></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLYERS -->
+<section id="flyers">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Spread the word</div>
+      <h2>The official flyers</h2>
+      <p>Save them, share them, post them — help us get the word out to the whole South Region.</p>
+    </div>
+    <div class="flyer-grid">
+      <figure class="flyer-card">
+        <a class="pic" href="flyers/young-adults.jpg" target="_blank" rel="noopener">
+          <img src="flyers/young-adults.jpg" alt="Young Adults Camp flyer — Camp Ezekiel, July 31 to August 2, 2026">
+        </a>
+        <figcaption>Young Adults Camp</figcaption>
+        <a class="dl" href="flyers/young-adults.jpg" download="CampEzekiel-YoungAdults-Flyer.jpg">Download flyer ↓</a>
+      </figure>
+      <figure class="flyer-card">
+        <a class="pic" href="flyers/youth.jpg" target="_blank" rel="noopener">
+          <img src="flyers/youth.jpg" alt="Youth Camp flyer — Camp Ezekiel, July 31 to August 2, 2026">
+        </a>
+        <figcaption>Youth Camp</figcaption>
+        <a class="dl" href="flyers/youth.jpg" download="CampEzekiel-Youth-Flyer.jpg">Download flyer ↓</a>
+      </figure>
     </div>
   </div>
 </section>
@@ -457,6 +512,7 @@
         <h5>Explore</h5>
         <a href="#about">About</a>
         <a href="#tracks">Tracks</a>
+        <a href="#flyers">Flyers</a>
         <a href="#details">Details</a>
         <a href="#register">Register</a>
         <a href="#faq">FAQ</a>
