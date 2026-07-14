@@ -193,6 +193,8 @@
   .bring-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   .bring-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;transition:transform .2s ease,box-shadow .2s ease}
   .bring-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .bring-card .ic{width:56px;height:56px;border-radius:12px;display:grid;place-items:center;background:var(--soft);margin-bottom:16px}
+  .bring-card .ic img{width:72%;height:72%;object-fit:contain;image-rendering:pixelated}
   .bring-card .chip{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:7px 14px;border-radius:999px;margin-bottom:16px}
   .bring-card:nth-child(1) .chip{background:rgba(58,47,143,.12);color:var(--purple)}
   .bring-card:nth-child(2) .chip{background:rgba(245,166,35,.18);color:var(--gold-deep)}
@@ -459,6 +461,7 @@
     </div>
     <div class="bring-grid">
       <div class="bring-card">
+        <div class="ic"><img src="icons/shield.png" alt="Shield icon"></div>
         <span class="chip">Spiritual Armour</span>
         <h3>Come ready for the Word</h3>
         <ul>
@@ -468,6 +471,7 @@
         </ul>
       </div>
       <div class="bring-card">
+        <div class="ic"><img src="icons/clothes.png" alt="Clothes on a line icon"></div>
         <span class="chip">Dress Code</span>
         <h3>Dress to move</h3>
         <ul>
@@ -477,6 +481,7 @@
         </ul>
       </div>
       <div class="bring-card">
+        <div class="ic"><img src="icons/campfire.png" alt="Campfire icon"></div>
         <span class="chip">Personal Items</span>
         <h3>The essentials</h3>
         <ul>
