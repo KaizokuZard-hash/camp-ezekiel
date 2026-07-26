@@ -6,7 +6,9 @@ One camp, two tracks: **Youth** and **Young Adults**.
 
 ## Architecture
 
-- Plain static site: `index.html` (all CSS/JS inline) + image assets. No build step, no dependencies.
+- Plain static site: `index.html` + `camp-wear.html` (all CSS/JS inline per page) + image assets. No build step, no dependencies.
+- `camp-wear.html` — Camp Wear style-guide page: theme "Deep Roots, Wide Range" (Jer 17:8), day-by-day fits, downloadable lookbook PDFs, and the fashion advice hotline (**Trail Guide, +1 630 923 3097** — number also appears inside the LookBook PDF).
+- `lookbooks/` — `Camp-Ezekiel-LookBook.pdf` (12 pp, 18 MB) and `Camp-Ezekiel-Shortbook.pdf` (8 pp, 20 MB), served as downloads on camp-wear.html. Both under Cloudflare Pages' 25 MB/file limit — keep any replacement under that.
 - `logo.png` — round camp logo (used in nav, hero badge, footer, favicon).
 - `logo-white.png` — white version of the logo (currently **unused**; owner declined a hero swap).
 - `icons/` — pixel-art icons (calendar, location, money, phone → Details cards; shield, clothes, campfire → What to Bring cards). Rendered with `image-rendering: pixelated`.
